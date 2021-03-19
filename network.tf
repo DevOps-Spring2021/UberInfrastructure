@@ -5,7 +5,7 @@ resource "aws_vpc" "vpc" {
   enable_dns_support             = true
   enable_classiclink_dns_support = true
   tags = {
-    Name = Uber-vpc
+    Name = "Uber_vpc"
   }
 }
 
