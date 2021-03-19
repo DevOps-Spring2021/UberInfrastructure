@@ -41,6 +41,6 @@ variable "db_password" {
   type = "string"
 }
 
-variable "ssh-key" {
+variable "ssh_key" {
   
 }

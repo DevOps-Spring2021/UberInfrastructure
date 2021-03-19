@@ -3,7 +3,7 @@ resource "aws_instance" "backend" {
   depends_on = [ aws_db_instance.uber-db ]
   ami                    = "${var.ami}"
   instance_type          = "t2.micro"
-  key_name               = "${var.ssh-key}"
+  key_name               = "${var.ssh_key}"
   vpc_security_group_ids = ["${aws_security_group.application_security_group.id}"]
   subnet_id              = "${aws_subnet.public_subnet[0].id}"
 
@@ -31,7 +31,7 @@ resource "aws_instance" "frontend" {
   depends_on = [ aws_db_instance.uber-db ]
   ami                    = "${var.ami}"
   instance_type          = "t2.micro"
-  key_name               = "${var.ssh-key}"
+  key_name               = "${var.ssh_key}"
   vpc_security_group_ids = ["${aws_security_group.application_security_group.id}"]
   subnet_id              = "${aws_subnet.public_subnet[1].id}"
 
