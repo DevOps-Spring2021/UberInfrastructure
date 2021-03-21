@@ -7,7 +7,7 @@ Building infrastructure on the AWS for the Uber appplication
 
 ### Technology Stack
 * AWS
-* Terrform
+* Terraform
 
 ### Prerequisites
 * AWS CLI
@@ -25,7 +25,6 @@ Building infrastructure on the AWS for the Uber appplication
 <b>Note</b>: Change variables value in the variable.tfvars according to need 
 
 ### Destroy Instruction 
-- Run command
 ```
  $ terraform destroy -var-file="variable.tfvars"
 ```
