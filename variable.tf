@@ -8,17 +8,17 @@ variable profile {
 
 # VPC_cidr
 variable "vpc_cidr" {
-  type = "string"
+  type = string
 }
 
 # Public Subnet_cidrs
 variable "public_cidrs" {
-  type = "list"
+  type = list
 }
 
 # AMI
 variable "ami" {
-  type = "string"
+  type = string
 }
 
 #  Avilable Availibility Zone
@@ -28,19 +28,26 @@ data "aws_availability_zones" "available" {
 
 # Database name
 variable "db_name" {
-  type = "string"
+  type = string
 }
 
 # Database user name
 variable "db_user_name" {
-  type = "string"
+  type = string
 }
 
 # Database password
 variable "db_password" {
-  type = "string"
+  type = string
 }
 
+# SSH Key
 variable "ssh_key" {
+  
+}
+variable "private_key_path" {
+  
+}
+variable "elastic_ip" {
   
 }

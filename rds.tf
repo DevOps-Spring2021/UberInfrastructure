@@ -8,6 +8,7 @@ resource "aws_db_instance" "uber-db" {
   ca_cert_identifier     = "rds-ca-2019"
   storage_type           = "gp2"
   allocated_storage      = 20
+  publicly_accessible    = true
   name                   = "${var.db_name}"
   username               = "${var.db_user_name}"
   password               = "${var.db_password}"
@@ -23,12 +24,12 @@ resource "aws_security_group" "database_security_group" {
   description = "Allow inbound traffic for database"
   vpc_id      = "${aws_vpc.vpc.id}"
 
-  ingress {
+   ingress {
     description = "3306 from VPC"
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    security_groups = ["${aws_security_group.application_security_group.id}"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
