@@ -5,6 +5,10 @@
 ## Objective
 Building infrastructure on the AWS for the Uber appplication  
 
+### Maintainer 
+Name: Naresh Agrawal, NUID: 001054600<br/>
+Name: Akshay Babaji Phapale, NUID: 001316563
+
 ### Technology Stack
 * AWS
 * Terraform
