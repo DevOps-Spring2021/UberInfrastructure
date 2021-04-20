@@ -1,11 +1,7 @@
 aws_region = "us-east-1"
 profile = "dev"
-ssh_key = "demo"
 db_name = "uber"
 vpc_cidr = "10.0.0.0/16"
 public_cidrs = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24","10.0.4.0/24"]
 db_user_name = "root"
 db_password = "password"
-ami = "ami-013f17f36f8b1fefb"
-private_key_path = "~/Downloads/demo.pem"
-elastic_ip = "54.205.248.152"
