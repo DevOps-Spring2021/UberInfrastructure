@@ -31,5 +31,7 @@ Name: Akshay Babaji Phapale, NUID: 001316563
 ### Destroy Instruction 
 ```
  $ terraform destroy -var-file="variable.tfvars"
+
  
+
 ```
