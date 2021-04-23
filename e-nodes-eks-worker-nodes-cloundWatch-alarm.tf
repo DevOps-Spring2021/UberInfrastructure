@@ -7,13 +7,13 @@ resource "aws_cloudwatch_metric_alarm" "CPUAlarmHigh" {
   namespace           = "AWS/EC2"
   period              = "60"
   statistic           = "Average"
-  threshold           = "20"
+  threshold           = "50"
 
   dimensions = {
     AutoScalingGroupName = "${aws_autoscaling_group.demo.name}"
   }
 
-  alarm_description = "Scale-up if CPU 5 > % for 1 minutes"
+  alarm_description = "Scale-up if CPU 50 > % for 1 minutes"
   alarm_actions     = ["${aws_autoscaling_policy.WebServerScaleUpPolicy.arn}"]
 }
 
@@ -26,7 +26,7 @@ resource "aws_cloudwatch_metric_alarm" "CPUAlarmLow" {
   namespace           = "AWS/EC2"
   period              = "60"
   statistic           = "Average"
-  threshold           = "5"
+  threshold           = "3"
 
   dimensions = {
     AutoScalingGroupName = "${aws_autoscaling_group.demo.name}"
