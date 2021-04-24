@@ -3,11 +3,27 @@
 ## Infrastructure as Code with Terraform
 
 ## Objective
-Building infrastructure on the AWS for the Uber appplication  
+Building Kubernetes Cluster infrastructure on the AWS  
 
 ### Maintainer 
-Name: Naresh Agrawal, NUID: 001054600<br/>
-Name: Akshay Babaji Phapale, NUID: 001316563
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>NUID</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Akshay Babaji Phapale</td>
+            <td>001316563</td>
+        </tr>
+        <tr>
+            <td>Naresh Agrawal</td>
+            <td>001054600</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Technology Stack
 * AWS
