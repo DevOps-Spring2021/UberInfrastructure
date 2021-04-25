@@ -3,7 +3,7 @@
 ## Infrastructure as Code with Terraform
 
 ## Objective
-Building Kubernetes Cluster infrastructure on the AWS  
+Building Kubernetes Cluster infrastructure on the AWS and Azure 
 
 ### Maintainer 
 <table>
@@ -26,11 +26,13 @@ Building Kubernetes Cluster infrastructure on the AWS
 </table>
 
 ### Technology Stack
-* AWS
+* EKS
+* AKS
 * Terraform
 
 ### Prerequisites
 * AWS CLI
+* Azure CLI
 * Terraform
 
 
