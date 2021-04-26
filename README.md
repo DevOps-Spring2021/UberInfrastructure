@@ -50,3 +50,9 @@ Building Kubernetes Cluster infrastructure on the AWS and Azure
 ```
  $ terraform destroy -var-file="variable.tfvars"
 ```
+
+### Load Testing using Jmeter
+```
+$ cd LoadTesting
+open file in Jmeter
+```
